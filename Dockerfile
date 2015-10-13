@@ -12,7 +12,7 @@ RUN \
   
 #install additional tools and library prerequisites
 RUN \
-  yum install -y netcdf-devel libxml2-devel 
+  yum install -y netcdf-devel
   
 # Setup default cran repo
 RUN echo "r <- getOption('repos'); r['CRAN'] <- 'http://cran.us.r-project.org'; options(repos = r);" > ~/.Rprofile
